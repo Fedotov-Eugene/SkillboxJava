@@ -8,8 +8,12 @@ public class FullName {
 
         String[] array = text.replaceAll("\\s+", " ").trim().split(" ");
 
-        System.out.println("Фамилия: " + array[0]
-                + "\nИмя: " + array[1]
-                + "\nОтчество: " + array[2]);
+        if (array.length == 3) {
+            System.out.println("Фамилия: " + array[0]
+                    + "\nИмя: " + array[1]
+                    + "\nОтчество: " + array[2]);
+        } else {
+            System.out.println("Вы ввели неполные данные!!!");
+        }
     }
 }
